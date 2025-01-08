@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="functionView">
+        <attr name="functionResId" format="integer" />
+        <attr name="tvTextFunction" format="string" />
+        <attr name="functionShowLine" format="boolean"/>
+    </declare-styleable>
+
+</resources>

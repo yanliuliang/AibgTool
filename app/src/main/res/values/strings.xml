@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">疯狂Android讲义demo</string>
+    <string name="text4">测试4</string>
+    <string name="text3">测试3</string>
+    <string name="text">测试</string>
+    <string name="permission_tip">您必须授予该应用访问手机状态、读取手机定位的权限</string>
+
+    <string name="short_label">静态快捷</string>
+    <string name="long_label">静态添加的快捷方式</string>
+    <string name="disable_message">不可用的快捷方式</string>
+    <string name="show_message">静态快捷方式打开的Activity</string>
+
+    <string name="monthly_title" formatted="false">%d年%d月阅读报告</string>
+
+    <string name="orientation">方向传感器返回的值</string>
+    <string name="gyro">陀螺仪传感器返回的值</string>
+    <string name="magnetic">磁场传感器返回的值</string>
+    <string name="gravity">重力传感器返回的值</string>
+    <string name="linearAcc">线性加速度传感器返回的值</string>
+    <string name="temperature">温度传感器返回的值</string>
+    <string name="humidity">湿度传感器返回的值</string>
+    <string name="light">光传感器返回的值</string>
+    <string name="pressure">压力传感器返回的值</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_alarm">闹铃设置界面</string>
+    <string name="title_activity_alarm02">闹铃提醒界面</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+</resources>

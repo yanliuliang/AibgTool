@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6A6D2">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150sp"
+        android:layout_height="70sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#E6E6F2"
+        android:text="关闭闹铃" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:src="@drawable/yuanquan2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="37sp"
+        android:layout_height="37sp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:src="@drawable/yinyue" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignBottom="@+id/imageView3"
+        android:text="默认" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="160sp"
+        android:layout_height="160sp"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:alpha="0.6"
+        android:src="@drawable/naozhong" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="TextView" />
+
+</RelativeLayout>

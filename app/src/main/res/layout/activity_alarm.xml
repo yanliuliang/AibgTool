@@ -1,0 +1,73 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#996666" >
+    <EditText
+        android:id="@+id/alarm1_editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2023/5/22"
+        android:layout_alignLeft="@+id/alarm1_textView1"
+        android:layout_below="@+id/alarm1_textView1"
+        android:ems="10"
+        android:hint="2021/12/1" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/alarm1_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="闹铃提示日期："
+        android:textSize="27sp" />
+
+    <Button
+        android:id="@+id/alarm1_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/alarm1_textView1"
+        android:layout_marginBottom="23dp"
+        android:text="保存闹铃"
+         />
+
+    <TimePicker
+        android:id="@+id/alarm1_timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="170sp"
+        android:layout_alignLeft="@+id/alarm1_editText1"
+        android:layout_below="@+id/alarm1_editText1"
+        android:layout_marginTop="24dp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="300sp"
+        android:layout_height="3sp"
+        android:layout_alignLeft="@+id/alarm1_timePicker1"
+        android:layout_below="@+id/alarm1_timePicker1"
+        android:background="#272727" />
+
+    <EditText
+        android:id="@+id/alarm1_editText2"
+        android:layout_width="wrap_content"
+        android:hint="时间"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignRight="@+id/view1"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="18dp"
+        android:ems="10" >
+    </EditText>
+
+    <ImageView
+        android:id="@+id/alarm1_imageView1"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_above="@+id/alarm1_timePicker1"
+        android:layout_alignRight="@+id/alarm1_timePicker1"
+        android:src="@drawable/dh" />
+
+</RelativeLayout>

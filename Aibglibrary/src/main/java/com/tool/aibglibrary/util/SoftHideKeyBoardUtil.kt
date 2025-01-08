@@ -32,7 +32,7 @@ object SoftHideKeyBoardUtil {
             activity.findViewById<View>(android.R.id.content) as FrameLayout //2､获取到setContentView放进去的View
         mChildOfContent =
             content.getChildAt(0) //3､给Activity的xml布局设置View树监听，当布局有变化，如键盘弹出或收起时，都会回调此监听
-        mChildOfContent?.viewTreeObserver.addOnGlobalLayoutListener {
+        mChildOfContent?.viewTreeObserver?.addOnGlobalLayoutListener {
             if (isfirst) {
                 contentHeight = mChildOfContent.height //兼容华为等机型
                 isfirst = false

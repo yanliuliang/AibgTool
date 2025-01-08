@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.content.res.getResourceIdOrThrow
 import androidx.core.content.res.getStringOrThrow
 import androidx.core.content.withStyledAttributes
 import androidx.core.view.isInvisible
@@ -44,8 +45,7 @@ class FunctionView(mContext: Context?, attrs: AttributeSet?) : LinearLayout(mCon
 
     init {
         mContext?.withStyledAttributes(attrs, R.styleable.functionView) {
-            //icon暂时废弃
-            //image = getResourceIdOrThrow(R.styleable.functionView_functionResId)
+            image = getResourceIdOrThrow(R.styleable.functionView_functionResId)
             text = getStringOrThrow(R.styleable.functionView_tvTextFunction)
             showBottomLine = getBoolean(R.styleable.functionView_functionShowLine, false)
         }
@@ -80,9 +80,23 @@ class FunctionView(mContext: Context?, attrs: AttributeSet?) : LinearLayout(mCon
     }
 
     /**
-     * 隐藏箭头
+     * 隐藏next箭头
      */
     fun hindNextIcon() {
         iconNext?.isInvisible = true
+    }
+
+    /**
+     * 隐藏下划线
+     */
+    fun hindLineView() {
+        bottomLine?.isInvisible = true
+    }
+
+    /**
+     * 显示下划线
+     */
+    fun showLineView(){
+        bottomLine?.isVisible = true
     }
 }

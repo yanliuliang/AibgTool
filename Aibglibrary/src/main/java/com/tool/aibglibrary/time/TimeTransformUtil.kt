@@ -113,6 +113,16 @@ fun Long.getDateSecond(): Int {
 }
 
 /**
+ * 获取时间戳中的毫秒钟
+ * @return [Int] 秒钟
+ */
+fun Long.getDateMillSecond(): Int {
+    val calendar = Calendar.getInstance()
+    calendar.timeInMillis = this
+    return calendar.get(Calendar.MILLISECOND)
+}
+
+/**
  * 时间戳转换成字符窜
  * @param pattern 时间样式 yyyy-MM-dd HH:mm:ss
  * @return [String] 时间字符串

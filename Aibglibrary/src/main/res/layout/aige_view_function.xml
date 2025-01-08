@@ -15,6 +15,7 @@
             android:id="@+id/imageSetting"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:src="@drawable/aibg_icon_loading"
             android:layout_centerVertical="true"
             android:adjustViewBounds="true" />
 
@@ -24,9 +25,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="18dp"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@id/imageSetting"
             android:drawablePadding="7dp"
-            android:textColor="#222222"
+            android:textColor="#ff222222"
             android:textSize="14sp" />
 
         <TextView
@@ -36,7 +38,7 @@
             android:layout_centerVertical="true"
             android:layout_marginEnd="16dp"
             android:layout_toLeftOf="@+id/imageNext"
-            android:textColor="#ffb5b5b5"
+            android:textColor="#999999"
             android:textSize="12sp"
             />
 
@@ -56,7 +58,7 @@
             android:layout_below="@id/tvText"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="15dp"
-            android:background="#E9E9EC" />
+            android:background="#3C3C3C" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

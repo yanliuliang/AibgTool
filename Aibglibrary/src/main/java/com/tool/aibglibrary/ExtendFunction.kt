@@ -38,15 +38,13 @@ fun View.expandTouchView(expandSize: Int = 10) {
     parentView?.post {
         val rect = Rect()
         getHitRect(rect) //getHitRect(rect)将视图在父容器中所占据的区域存储到rect中。
-        Log.d("打印yll", "expandTouchView() +  $rect")
+        Log.d("expandTouchView", "rect = $rect")
         rect.left -= expandSize
         rect.top -= expandSize
         rect.right += expandSize
         rect.bottom += expandSize
-        Log.d("打印yll", "expandRect() +  $rect")
+        Log.d("expandTouchView", "expandRect = $rect")
         parentView.touchDelegate = TouchDelegate(rect, this)
     }
 }
-
-
 

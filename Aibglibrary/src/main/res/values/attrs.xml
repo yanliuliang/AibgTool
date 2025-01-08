@@ -6,4 +6,11 @@
         <attr name="functionShowLine" format="boolean"/>
     </declare-styleable>
 
+    <declare-styleable name="RadiusShapeTextView">
+        <attr name="aibg_solidColor" format="reference|color" />
+        <attr name="aibg_radius" format="dimension" />
+        <attr name="aibg_strokeColor" format="reference|color" />
+        <attr name="aibg_strokeWidth" format="dimension" />
+        <attr name="aibg_textViewName" format="string" />
+    </declare-styleable>
 </resources>

@@ -24,3 +24,4 @@ fun Any.decimalFormat(decimalFormat: String = "00"): Any {
     val dm = DecimalFormat(decimalFormat)
     return dm.format(this)
 }
+

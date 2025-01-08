@@ -30,17 +30,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+
+    // 如果你的项目使用的是 Kotlin，可以指定 Kotlin 版本
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = "11"  // 确保 Kotlin 使用 JDK 11
+    }
+
+    // 指定 Java 编译选项
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     buildFeatures {
         dataBinding = true
         viewBinding true
     }
+
+
 
 }
 repositories {
